@@ -1,0 +1,21 @@
+</div>
+<div class="container-fluid footer text-center" role="footer">	
+	<div class="friend-link">
+		{if empty($_W['setting']['copyright']['footerright'])}
+			
+		{else}
+			{$_W['setting']['copyright']['footerright']}
+		{/if}
+	</div>
+	<div class="copyright">{if empty($_W['setting']['copyright']['footerleft'])}Powered by <a href="http://bbs.rewlkj.com"><b>蚁人</b></a> v{IMS_VERSION} &copy; 2014-2018 <a href="http://bbs.rewlkj.com"></a>{else}{$_W['setting']['copyright']['footerleft']}{/if}</div>
+	{if !empty($_W['setting']['copyright']['icp'])}
+	<div>备案号：<a href="http://www.miitbeian.gov.cn" target="_blank">{$_W['setting']['copyright']['icp']}</a></div>{/if}
+</div>
+</div>
+
+</div>
+</div>
+{template 'common/footer-base'}
+
+</body>
+</html>
